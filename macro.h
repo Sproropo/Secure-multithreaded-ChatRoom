@@ -1,0 +1,17 @@
+#define SET_BUFFER 10000
+#define BUFF_PASSCODE 20
+#define HEADER_LEN 4
+#define X509_V_FLAG_CRL_CHECK 0x4
+#define TAG_LEN 16
+#define PAYLOAD_LENGTH 4
+
+#define SESS_CIPHER EVP_aes_256_cbc()
+#define SESS_CIPHER_KEY_LEN EVP_CIPHER_key_length(SESS_CIPHER)
+#define SESS_CIPHER_BLOCK_DIM EVP_CIPHER_block_size(SESS_CIPHER)
+#define SESS_CIPHER_IV_LEN EVP_CIPHER_iv_length(SESS_CIPHER)
+#define DIG_SIGN_CIPHER EVP_sha256()
+
+
+#define MSG '0'
+#define ALERT_CLIENT_EXITED '1'
+#define EXIT_CHAT '2'
