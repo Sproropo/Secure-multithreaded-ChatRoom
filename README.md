@@ -1,4 +1,4 @@
-# Secure multi-threaded ChatRoom
+# Secure multithreaded ChatRoom
 - This project is a client-server multi-threaded application that allows clients to communicate through an authenticated channel. Users interact with the application entirely through the command line.
 - Clients rely on the server to identify available users; their communication with the server is encrypted. However, once connected, messages between clients are secured by end-to-end encryption, meaning the server cannot read their contents. 
 - The communication is protected by an authentication mechanism, providing security against MITM and REPLAY attacks. 
